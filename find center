@@ -1,0 +1,19 @@
+class Rectangle:
+    """Represents a rectangle
+
+        attributes: width, height, corner."""
+class Point:
+    """Represents a point in 2D space."""
+
+box = Rectangle()
+box.width = 100.0
+box.height = 200.0
+box.corner = Point()
+box.corner.x = 0.0
+box.corner.y = 0.0
+
+def find_center(rect):
+    p = Point()     #function, a constructor
+    p.x = rect.corner.x + rect.width/2
+    p.y = rect.corner.y + rect.height/2
+    return p
