@@ -1,0 +1,17 @@
+class Point:
+    """Represents a point in 2D space."""
+
+
+p1 = Point()
+p1.x = 3.0
+p1.y = 4.0
+
+
+import copy    
+p2 = copy.copy(p1)
+
+print(p1 == p2)
+
+box1 = copy.deepcopy(box)
+print(box1 is box)
+print(box1.width == box.width)
